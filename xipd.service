@@ -1,0 +1,12 @@
+[Unit]
+Description=XIP Protocol Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/xipd
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
